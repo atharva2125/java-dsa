@@ -5,7 +5,24 @@ import java.util.*;
 class Codechef
 {
 	public static void main (String[] args)
-	{
+	{   
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        // Add elements to the ArrayList
+        numbers.add(12);
+        numbers.add(25);
+        numbers.add(34);
+        numbers.add(46);
+
+        // Remove element equal to 25
+        for (int i = 0; i<numbers.size(); i++) {
+            if (numbers.get(i) == 34) {
+                numbers.remove(i);
+                break;
+            }
+        }
+        
+        System.out.println(numbers);
 	    // Create an ArrayList
 		ArrayList<String> codechef = new ArrayList<>();
 		
