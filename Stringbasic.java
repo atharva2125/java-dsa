@@ -11,5 +11,6 @@ public class Stringbasic {
         String str = "Hello";
         int len = str.length();
         System.out.println(len);
+        System.out.println(str.charAt(1));
     }
 }
