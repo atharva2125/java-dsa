@@ -2,8 +2,6 @@ public class ReverseWords {
     public static String reverseWords(String s) {
         // Trim leading and trailing spaces
         s = s.trim();
-        
-        // Split words by multiple spaces
         String[] words = s.split("\\s+");
         
         // Reverse the words using StringBuilder

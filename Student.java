@@ -1,20 +1,18 @@
 class Student {
     String name;
     int age;
-
-    // 1. Default Constructor
+ 
     Student() {
         name = "Unknown";
         age = 0;
     }
 
-    // 2. Parameterized Constructor
+  
     Student(String n, int a) {
         name = n;
         age = a;
     }
-
-    // 3. Copy Constructor
+ 
     Student(Student s) {
         name = s.name;
         age = s.age;

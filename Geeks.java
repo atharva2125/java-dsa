@@ -2,9 +2,7 @@
 // Java program to demonstrate the Encapsulation.
 class Person {
     
-    // Encapsulating the name and age
-    // only approachable and used using
-    // methods defined
+ 
     private String name;
     private int age;
 
@@ -17,7 +15,7 @@ class Person {
     public void setAge(int age) { this.age = age; }
 }
 
-// Driver Class
+ 
 public class Geeks {
     
     // main function

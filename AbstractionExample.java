@@ -1,11 +1,8 @@
-// Abstraction Example in Java
 
-// Abstract class
 abstract class Shape {
-    // Abstract method (no implementation)
+    
     abstract double calculateArea();
 
-    // Concrete method (has implementation)
     void display() {
         System.out.println("Calculating area...");
     }

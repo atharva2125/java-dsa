@@ -1,29 +1,40 @@
-class converttoRupees {
-    public static int convertToRupees(String S) {
-        // Trim any extra spaces and split the string into amount and currency
-        S = S.trim();
-        String[] parts = S.split(" ");
-        
-        // Extract amount and currency
-        int amount = Integer.parseInt(parts[0]);
-        char currency = parts[1].charAt(0);
+import java.util.Scanner;
 
-        // Convert based on currency type
+class converttoRupees {
+    public static double convertFromRupees(int rupees, char currency) {
         switch (currency) {
-            case 'Y': return amount * 10;     // Yuan
-            case 'P': return amount * 100;    // Pound
-            case 'D': return amount * 70;     // Dollar
-            case 'R': return amount;          // Rupee
+            case 'Y': return rupees / 10.0;     // Convert to Yuan
+            case 'P': return rupees / 100.0;    // Convert to Pound
+            case 'D': return rupees / 70.0;     // Convert to Dollar
+            case 'R': return rupees;            // Keep as Rupee
             default: 
                 throw new IllegalArgumentException("Invalid currency: " + currency);
         }
     }
 
-    // Sample test
     public static void main(String[] args) {
-        System.out.println(convertToRupees("1000 R")); // 1000
-        System.out.println(convertToRupees("5 Y"));    // 50
-        System.out.println(convertToRupees("2 P"));    // 200
-        System.out.println(convertToRupees("3 D"));    // 210
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter amount in Rupees: ");
+        int rupees = scanner.nextInt();
+        
+        System.out.print("Enter target currency (Y/P/D/R): ");
+        char currency = scanner.next().charAt(0);
+        
+        try {
+            double result = convertFromRupees(rupees, currency);
+            String currencyName = switch(currency) {
+                case 'Y' -> "Yuan";
+                case 'P' -> "Pounds";
+                case 'D' -> "Dollars";
+                case 'R' -> "Rupees";
+                default -> "Unknown";
+            };
+            System.out.printf("%d Rupees = %.2f %s%n", rupees, result, currencyName);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+        
+        scanner.close();
     }
 }

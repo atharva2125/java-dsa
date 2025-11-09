@@ -14,7 +14,7 @@ public class capnew {
                 return c;
             }
         }
-        return '\0'; // Return a default value if no character found
+        return '\0'; 
     }
     public static void main(String[] args){
 

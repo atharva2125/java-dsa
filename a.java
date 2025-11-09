@@ -3,28 +3,21 @@ public class a{
     double b;
     String c;
 
-    // Default constructor
     public a() {
         this.a = 0;
         this.b = 0.0;
         this.c = "Default";
     }
-
-    // Parameterized constructor 1
     public a(int a) {
         this.a = a;
         this.b = 0.0;
         this.c = "Default";
     }
-
-    // Parameterized constructor 2
     public a(int a, double b) {
         this.a = a;
         this.b = b;
         this.c = "Default";
     }
-
-    // Parameterized constructor 3
     public a(int a, double b, String c) {
         this.a = a;
         this.b = b;

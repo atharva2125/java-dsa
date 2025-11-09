@@ -33,7 +33,7 @@ public class runtimepolymorphism {
 
         // The JVM checks the actual object type at RUNTIME to decide which
         // makeSound() method to execute.
-        myAnimal1.makeSound(); // Calls the Dog's makeSound() method
-        myAnimal2.makeSound(); // Calls the Cat's makeSound() method
+        myAnimal1.makeSound(); 
+        myAnimal2.makeSound(); 
     }
 }

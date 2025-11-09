@@ -6,8 +6,7 @@ public class exception {
       
         try {
             System.out.println("Inside try block");
-            int result
-                = 10 / 0; // This will cause an exception
+            int result= 10 / 0; // This will cause an exception
         }
         catch (ArithmeticException e) {
             System.out.println("Exception caught: "

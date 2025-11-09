@@ -1,8 +1,7 @@
-// Java Program to demonstrate
-// Constructor usage
+
 import java.io.*;
 
-// Driver Class
+
 class constructor {
   
     // Constructor
