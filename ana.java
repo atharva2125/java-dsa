@@ -18,4 +18,11 @@ public class ana {
         HashMap<Character, Integer> map2 = makefrequencyMap(s2);
         return map1.equals(map2);
     }
+    public static void main(String[] args) {
+        ana obj = new ana();
+        String str1 = "listen";
+        String str2 = "silent";
+        boolean result = obj.isanagram(str1, str2);
+        System.out.println("Are the two strings anagrams? " + result);
+    }
 }

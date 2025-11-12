@@ -1,6 +1,4 @@
-
-abstract class Shape {
-    
+abstract class Shape {    
     abstract double calculateArea();
 
     void display() {
