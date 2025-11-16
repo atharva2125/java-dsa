@@ -27,6 +27,7 @@ public class oa {
         scanner.close();
     }
 
+
     public static int subarraySum(int[] nums, int k) {
         // HashMap to store the prefix sums and their counts
         Map<Integer, Integer> prefixSumCounts = new HashMap<>();
