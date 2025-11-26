@@ -24,6 +24,7 @@ class Solutionmatrix {
     }
 
     public static void main(String[] args) {
+        Solutionmatrix obj = new Solutionmatrix();
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter size of matrix (n): ");
@@ -38,7 +39,7 @@ class Solutionmatrix {
             }
         }
 
-        Solutionmatrix obj = new Solutionmatrix();
+        
         int result = obj.minSwapsToCenter(matrix);
 
         System.out.println("Minimum swaps required: " + result);
