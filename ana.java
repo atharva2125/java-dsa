@@ -20,8 +20,8 @@ public class ana {
     }
     public static void main(String[] args) {
         ana obj = new ana();
-        String str1 = "listen";
-        String str2 = "silent";
+        String str1 = "rain";
+        String str2 = "irpn";
         boolean result = obj.isanagram(str1, str2);
         System.out.println("Are the two strings anagrams? " + result);
     }

@@ -16,7 +16,9 @@ public class star {
 
 public static void main(String args[])
 {
-    int n=6;
+    Scanner sc=new Scanner(System.in);
+    System.out.print("Enter the number of rows: "); 
+    int n=sc.nextInt();
     print(n);
 }
 }

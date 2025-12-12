@@ -13,13 +13,13 @@ class LCM {
     }
 
     public static int lcm(int first, int second) {
-        int i = 1;
-        while (true) {
-            int factor = first * i;
-            if (factor % second == 0) {
-                return factor;
+        int a=1;
+        while(true){
+            first=first*a;
+            if(first%second==0){
+                return first;
             }
-            i++;
+            a++;
         }
     }
 } 
